@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React weather application that allows users to check the weather information for a specific city.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Built With](#built-with)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Weather App is a straightforward React application designed to provide users with current weather details for a given city. Users can enter a city name, and the app fetches weather information using the OpenWeatherMap API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Weather Information:** Display temperature, weather description, and city name.
+- **User-friendly Interface:** Simple and easy-to-use interface.
+- **Error Handling:** Handle errors gracefully when the entered city is not found.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+Install axios by this command 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install axios 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+and run,
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+num start
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js and npm installed on your machine.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/<your-username>/weather-app.git
 
-## Learn More
+Navigate to the project directory:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+cd weather-app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Install dependencies:
 
-### Code Splitting
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Start the development server:
 
-### Analyzing the Bundle Size
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Open your browser and visit http://localhost:3000.
 
-### Making a Progressive Web App
+Enter a city name in the input field and press the "WeatherApp" button to view the weather details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Built With
+React - JavaScript library for building user interfaces.
+Axios - Promise-based HTTP client for the browser and Node.js.
+Contributing
+Thank you for considering contributing to this project! Feel free to open issues, submit pull requests, or suggest improvements.
 
-### Advanced Configuration
+Bug Reports
+If you find a bug, please open an issue, including a clear description of the problem and any relevant code snippets or screenshots.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feature Requests
+If you have a feature request, feel free to open an issue with a detailed description of the proposed feature.
 
-### Deployment
+License
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Screenshot: 
 
-### `npm run build` fails to minify
+![Screenshot (236)](https://github.com/dassrinivas/WeatherApp/assets/151534297/7900ce8e-7fd6-4683-ac4e-fdf00c3f115b)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+![Screenshot (237)](https://github.com/dassrinivas/WeatherApp/assets/151534297/fff83de5-6273-40c8-8be2-3c74fc0c7bcc)
