@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import './Weather API/Weather';
+import WeatherApp from './Weather API/Weather';
+
 import './App.css';
 
 function App() {
+  const [showWeather, setShowWeather] = useState(false);
+  const [showNews, setShowNews] = useState(false);
+
+  const handleWeatherClick = () => {
+    setShowWeather(true);
+  };
+
+  const handleNewsClick = () => {
+    setShowNews(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+    <center>
+      <button className='btn' placeholder='Weather' onClick={handleWeatherClick}>
+        WeatherApp
+      </button>
+      {showWeather && <WeatherApp />}
+     
+      </center>
     </div>
   );
 }
